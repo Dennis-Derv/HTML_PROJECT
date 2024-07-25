@@ -1,0 +1,58 @@
+.menue-wrapper {
+  position: relative;
+}
+
+#menue-icon {
+  position: fixed;
+  top: 0;
+  left: 10px;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 24px;
+}
+.side-menue li {
+  margin-bottom: 10px;
+}
+
+.side-menue {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #333;
+  padding: 20px;
+  transform: translateY(-100%);
+  transition: 0.4s ease-in-out;
+}
+
+.menue-wrapper:focus-within .side-menue {
+  transform: translateY(0);
+}
+
+.side-menue a:hover {
+  color: #ccc;
+}
+.side-menue a {
+  color: lightcoral;
+  text-decoration: none;
+}
+/* 
+.menue-icon:focus + .side-menue, .side-menue:focus-within {transform: translateX(0);}
+
+.menue-icon:focus {
+    outline: none;
+} */
+
+.wahala {
+  width: 50%;
+  height: 200px;
+  margin-left: 50px;
+  background-color: blue;
+  align-content: center;
+  margin-top: 50px;
+}
+
+/* .spacer {
+  margin-right: 20px;
+} */
